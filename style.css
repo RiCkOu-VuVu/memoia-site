@@ -1,0 +1,88 @@
+/* Site memoia.be : couleurs « Pastel vivant » de l'app (src/theme/tokens.ts).
+   Polices hébergées ici (licence SIL OFL), pour ne rien charger chez un tiers. */
+@font-face { font-family: 'Fredoka'; src: url('fonts/Fredoka_600SemiBold.ttf') format('truetype'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Nunito'; src: url('fonts/Nunito_600SemiBold.ttf') format('truetype'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Nunito'; src: url('fonts/Nunito_800ExtraBold.ttf') format('truetype'); font-weight: 800; font-display: swap; }
+
+:root {
+  --bg: #F4F1FB;
+  --surface: #FFFFFF;
+  --muted-surface: #EEEAFB;
+  --ink: #1E1B2E;
+  --ink-muted: #5F5A73;
+  --border: #CFC9E3;
+  --primary: #6B4EE6;
+  --primary-soft: #DCD3FA;
+  --mint: #CDEFDD;
+  --mint-ink: #1F6B47;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.6;
+}
+a { color: var(--primary); font-weight: 800; }
+a:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
+
+header.top {
+  max-width: 760px; margin: 0 auto; padding: 20px 16px 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 40px; height: 40px; border-radius: 12px; }
+.brand span { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 24px; }
+nav.links { display: flex; gap: 6px; flex-wrap: wrap; }
+nav.links a {
+  font-size: 14px; text-decoration: none; color: var(--ink-muted);
+  padding: 6px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border);
+}
+nav.links a[aria-current="page"] { background: var(--primary-soft); color: var(--ink); border-color: var(--primary-soft); }
+
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+.card {
+  background: var(--surface); border-radius: 24px; padding: 28px 24px;
+  box-shadow: 0 6px 24px rgba(60, 40, 120, 0.08);
+}
+h1, h2, h3 { font-family: 'Fredoka', sans-serif; font-weight: 600; line-height: 1.25; }
+h1 { font-size: 32px; margin: 0 0 6px; }
+h2 { font-size: 22px; margin: 32px 0 8px; }
+h3 { font-size: 18px; margin: 20px 0 6px; }
+.updated { color: var(--ink-muted); font-size: 14px; margin: 0 0 20px; }
+.intro { font-size: 18px; }
+.note {
+  background: var(--muted-surface); border-radius: 16px; padding: 14px 18px; margin: 16px 0;
+}
+.ok { background: var(--mint); color: var(--mint-ink); }
+ul, ol { padding-left: 22px; }
+li { margin: 4px 0; }
+
+.table-wrap { overflow-x: auto; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; min-width: 520px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+th { font-weight: 800; background: var(--muted-surface); }
+
+.hero { text-align: center; padding: 24px 0 8px; }
+.hero img { width: 96px; height: 96px; border-radius: 26px; }
+.hero h1 { font-size: 38px; margin-top: 12px; }
+.hero p { color: var(--ink-muted); font-size: 19px; margin: 4px auto; max-width: 520px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 24px; }
+.tile {
+  display: block; background: var(--surface); border-radius: 20px; padding: 18px 20px; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--border);
+}
+.tile strong { display: block; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 18px; margin-bottom: 2px; }
+.tile span { color: var(--ink-muted); font-weight: 600; font-size: 15px; }
+
+footer { max-width: 760px; margin: 0 auto; padding: 0 16px 32px; color: var(--ink-muted); font-size: 14px; text-align: center; }
+
+@media (max-width: 480px) {
+  h1 { font-size: 27px; }
+  .card { padding: 22px 18px; border-radius: 20px; }
+}
