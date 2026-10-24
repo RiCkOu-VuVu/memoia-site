@@ -20,11 +20,11 @@
 <main>
 <article class="card">
 <h1>Politique de confidentialité</h1>
-<p class="updated">Version du 21 octobre 2026 · version bêta de l'application</p>
+<p class="updated">Version du 24 octobre 2026 · version bêta de l'application</p>
 
 <p class="intro">MemoIA est une application Android qui garde tes idées, tâches, listes et envies, et les range pour toi avec l'aide d'une intelligence artificielle. Cette page explique, en mots simples, ce qui est collecté, pourquoi, où ça va, combien de temps c'est gardé et ce que tu peux demander.</p>
 
-<div class="note"><strong>En bref.</strong> Tes données servent à faire fonctionner MemoIA, et à rien d'autre. Tes données personnelles ne sont jamais vendues ni louées, et ne servent pas à de la publicité. Il n'y a pas de publicité pendant la bêta. Tu peux supprimer ton compte et tout ce qu'il contient depuis l'application.</div>
+<div class="note"><strong>En bref.</strong> Tes données servent à faire fonctionner MemoIA et à l'améliorer (avec des nombres, jamais le contenu de tes idées), et à rien d'autre. Tes données personnelles ne sont jamais vendues ni louées, et ne servent pas à de la publicité. Il n'y a pas de publicité pendant la bêta. Tu peux supprimer ton compte et tout ce qu'il contient depuis l'application.</div>
 
 <h2>1. Qui est responsable</h2>
 <p>MemoIA est éditée par <strong>Olivier Hustin</strong>, Belgique, responsable du traitement de tes données au sens du Règlement général sur la protection des données (RGPD).<br>
@@ -52,13 +52,19 @@ Contact pour toute question sur tes données : <a href="mailto:contact@memoia.be
 <p>MemoIA n'utilise pas ta position.</p>
 <h3>Ce qui est technique</h3>
 <ul>
-  <li><strong>Rapports de plantage</strong> : si l'application plante, un rapport technique part chez Sentry (l'erreur, la version de l'application, le modèle du téléphone). Jamais le contenu de tes idées, ni de capture d'écran.</li>
-  <li><strong>Suivi du coût de l'IA</strong> : pour chaque appel à l'IA, le serveur note la fonction utilisée, le modèle, la quantité de texte et le coût, avec un numéro anonyme de l'installation. Jamais le contenu.</li>
+  <li><strong>Ouvertures de l'application</strong> : à l'ouverture (au plus une fois par heure), le serveur note la date, la version de l'application, le modèle du téléphone et la version d'Android. Ça sert à vérifier que les mises à jour arrivent et à t'aider en cas de problème.</li>
+  <li><strong>Jours d'utilisation</strong> : la date des jours où tu ouvres MemoIA, sans l'heure ni ce que tu y fais.</li>
+  <li><strong>Statistiques d'usage</strong> : quelques nombres calculés à partir de ta sauvegarde, par exemple combien d'idées tu as rangées dans chaque catégorie, combien de listes tu as et la date de ta première idée. Jamais le contenu de tes idées.</li>
+  <li><strong>Mesure de la prise en main</strong> : quelques événements, par exemple « première idée rangée », « catégorie ouverte », « astuce vue ou fermée », « aide ouverte », avec des nombres ou des mots fixes (par exemple le nom de la catégorie ou le nombre de minutes depuis le premier lancement). Jamais ce que tu écris.</li>
+  <li><strong>Rapports de plantage</strong> : si l'application plante, un rapport technique part chez Sentry (l'erreur, la version de l'application, le modèle du téléphone). À chaque ouverture, un signal anonyme permet aussi de compter les sessions sans plantage. Jamais le contenu de tes idées, ni de capture d'écran.</li>
+  <li><strong>Suivi du coût de l'IA</strong> : pour chaque appel à l'IA, le serveur note la fonction utilisée, le modèle, la quantité de texte et le coût, avec ton compte et un numéro de l'installation. Jamais le contenu.</li>
   <li><strong>Retours de bêta</strong> : ce que tu envoies avec l'outil « Amélioration MemoIA » (texte, écran concerné, captures d'écran que tu joins, version de l'application). Une capture d'écran peut montrer tes données : regarde-la avant de l'envoyer.</li>
 </ul>
+<h3>Ce que voit l'éditeur</h3>
+<p>Pour faire tourner la bêta, l'éditeur dispose d'un outil réservé qui montre, pour chaque compte : le pseudo et l'e-mail, les dates d'inscription, de connexion, de dernière ouverture et de dernière sauvegarde, la version de l'application et le modèle du téléphone, l'usage et le coût de l'IA, les nombres et événements ci-dessus, et les retours de bêta. Il peut mettre en pause l'IA d'un compte en cas d'abus ou de panne. <strong>Cet outil ne montre pas le contenu de tes idées, listes ou notes.</strong></p>
 
 <h2>3. L'intelligence artificielle</h2>
-<p>Quand tu captures une idée, son texte (et sa photo, s'il y en a une) est envoyé à une intelligence artificielle qui propose où la ranger. <strong>C'est toujours toi qui valides.</strong> Certaines fonctions (proposer des idées cadeaux, mettre une note au propre, générer un menu, retrouver un film ou un livre dont tu ne connais pas le titre…) font aussi appel à l'IA, <strong>seulement quand tu touches le bouton</strong> correspondant. Elles sont signalées dans l'application.</p>
+<p>Quand tu captures une idée, son texte (et sa photo, ou le document PDF que tu partages, s'il y en a un) est envoyé à une intelligence artificielle qui propose où la ranger. <strong>C'est toujours toi qui valides.</strong> Certaines fonctions (proposer des idées cadeaux, mettre une note au propre, générer un menu, retrouver un film ou un livre dont tu ne connais pas le titre…) font aussi appel à l'IA, <strong>seulement quand tu touches le bouton</strong> correspondant. Elles sont signalées dans l'application.</p>
 <ul>
   <li>IA principale : <strong>Gemini</strong> (Google), offre payante. Le traitement n'a pas forcément lieu en Europe.</li>
   <li>IA de secours : <strong>Mistral AI</strong> (France, en Europe).</li>
@@ -72,6 +78,7 @@ Contact pour toute question sur tes données : <a href="mailto:contact@memoia.be
     <tr><td>Faire fonctionner MemoIA : compte, sauvegarde, rangement par l'IA, rappels, partage</td><td>Exécution du service que tu demandes (art. 6.1.b)</td></tr>
     <tr><td>Contacts, agendas, micro, photos</td><td>Ton accord, que tu peux retirer à tout moment dans les réglages Android (art. 6.1.a)</td></tr>
     <tr><td>Corriger les plantages, protéger le service, suivre le coût de l'IA, limiter les abus</td><td>Intérêt légitime à offrir un service fiable et durable (art. 6.1.f)</td></tr>
+    <tr><td>Vérifier que les mises à jour arrivent, t'aider en cas de problème, comprendre comment la bêta est utilisée (nombres et événements, jamais le contenu)</td><td>Intérêt légitime à améliorer l'application (art. 6.1.f)</td></tr>
     <tr><td>Améliorer l'application grâce à tes retours de bêta</td><td>Ton accord, en envoyant un retour (art. 6.1.a)</td></tr>
   </tbody>
 </table></div>
@@ -92,13 +99,16 @@ Contact pour toute question sur tes données : <a href="mailto:contact@memoia.be
     <tr><td>Pexels</td><td>Photos d'illustration (le nom de l'idée seulement, jamais la personne)</td><td>Hors Europe</td></tr>
   </tbody>
 </table></div>
+<p>Les affiches de films, couvertures de livres et photos d'illustration sont chargées directement depuis ces services : comme pour toute page web, ils voient alors l'adresse internet de ton téléphone.</p>
 <p>Quand tu partages un lien (une vidéo, une recette), l'application ou le serveur va lire cette page pour en tirer le titre et l'image. Quand des données quittent l'Union européenne, c'est avec les garanties prévues par le RGPD : clauses contractuelles types de la Commission européenne, ou certification au cadre de protection des données UE–États-Unis.</p>
 
 <h2>6. Combien de temps</h2>
 <ul>
   <li>Ton compte et ce que tu as mis dans MemoIA : tant que ton compte existe. Si tu le supprimes, tout est effacé tout de suite, puis disparaît des sauvegardes techniques du serveur en quelques jours.</li>
   <li>Tes retours de bêta : pendant la bêta, puis au plus 12 mois. Ils ne sont plus reliés à ton compte quand tu le supprimes. Tu peux aussi demander leur effacement.</li>
-  <li>Suivi du coût de l'IA : anonyme, gardé pour les comptes du service.</li>
+  <li>Suivi du coût de l'IA : gardé pour les comptes du service ; il n'est plus relié à ton compte quand tu le supprimes.</li>
+  <li>Ouvertures de l'application : seule la dernière de chaque téléphone est gardée, tant que ton compte existe.</li>
+  <li>Jours d'utilisation, statistiques et événements d'usage : pendant la bêta, puis au plus 12 mois ; effacés avec ton compte.</li>
   <li>Rapports de plantage : 90 jours au plus.</li>
 </ul>
 
